@@ -24,7 +24,7 @@ class disco2(scrapy.Spider):
         precios = response.selector.xpath('//div[@class="Product-prices"]/span/text()').extract()
         tipos = response.selector.xpath('//div[@class="Product-brand"]/text()').extract()
         imagenes = response.selector.xpath('//a[@class="Product-image"]//img/@src').extract()
-        sitio = [0, 0, "Disco"]
+        sitio = response.selector.xpath('//li[@class="titulo-lista"]/text()').extract()
         n = 0
         cant = len(nombres)
         for n in range(cant):
@@ -59,7 +59,7 @@ class disco2(scrapy.Spider):
         precios = response.selector.xpath('//div[@class="Product-prices"]/span/text()').extract()
         tipos = response.selector.xpath('//div[@class="Product-brand"]/text()').extract()
         imagenes = response.selector.xpath('//a[@class="Product-image"]//img/@src').extract()
-        sitio = [0, 0, "Disco"]
+        sitio = response.selector.xpath('//li[@class="titulo-lista"]/text()').extract()
 
         n = 0
         cant = len(nombres)
@@ -96,7 +96,7 @@ class disco2(scrapy.Spider):
         precios = response.selector.xpath('//div[@class="Product-prices"]/span/text()').extract()
         tipos = response.selector.xpath('//div[@class="Product-brand"]/text()').extract()
         imagenes = response.selector.xpath('//a[@class="Product-image"]//img/@src').extract()
-        sitio = [0, 0, "Disco"]
+        sitio = response.selector.xpath('//li[@class="titulo-lista"]/text()').extract()
 
         n = 0
         cant = len(nombres)
@@ -133,7 +133,7 @@ class disco2(scrapy.Spider):
         precios = response.selector.xpath('//div[@class="Product-prices"]/span/text()').extract()
         tipos = response.selector.xpath('//div[@class="Product-brand"]/text()').extract()
         imagenes = response.selector.xpath('//a[@class="Product-image"]//img/@src').extract()
-        sitio = [0, 0, "Disco"]
+        sitio = response.selector.xpath('//li[@class="titulo-lista"]/text()').extract()
 
         n = 0
         cant = len(nombres)
@@ -169,7 +169,7 @@ class disco2(scrapy.Spider):
         precios = response.selector.xpath('//div[@class="Product-prices"]/span/text()').extract()
         tipos = response.selector.xpath('//div[@class="Product-brand"]/text()').extract()
         imagenes = response.selector.xpath('//a[@class="Product-image"]//img/@src').extract()
-        sitio = [0, 0, "Disco"]
+        sitio = response.selector.xpath('//li[@class="titulo-lista"]/text()').extract()
 
         n = 0
         cant = len(nombres)
@@ -205,7 +205,7 @@ class disco2(scrapy.Spider):
         precios = response.selector.xpath('//div[@class="Product-prices"]/span/text()').extract()
         tipos = response.selector.xpath('//div[@class="Product-brand"]/text()').extract()
         imagenes = response.selector.xpath('//a[@class="Product-image"]//img/@src').extract()
-        sitio = [0, 0, "Disco"]
+        sitio = response.selector.xpath('//li[@class="titulo-lista"]/text()').extract()
 
         n = 0
         cant = len(nombres)
@@ -241,7 +241,7 @@ class disco2(scrapy.Spider):
         precios = response.selector.xpath('//div[@class="Product-prices"]/span/text()').extract()
         tipos = response.selector.xpath('//div[@class="Product-brand"]/text()').extract()
         imagenes = response.selector.xpath('//a[@class="Product-image"]//img/@src').extract()
-        sitio = [0, 0, "Disco"]
+        sitio = response.selector.xpath('//li[@class="titulo-lista"]/text()').extract()
 
 
         n = 0
@@ -278,7 +278,7 @@ class disco2(scrapy.Spider):
         precios = response.selector.xpath('//div[@class="Product-prices"]/span/text()').extract()
         tipos = response.selector.xpath('//div[@class="Product-brand"]/text()').extract()
         imagenes = response.selector.xpath('//a[@class="Product-image"]//img/@src').extract()
-        sitio = [0, 0, "Disco"]
+        sitio = response.selector.xpath('//li[@class="titulo-lista"]/text()').extract()
 
         n = 0
         cant = len(nombres)
@@ -314,7 +314,7 @@ class disco2(scrapy.Spider):
         precios = response.selector.xpath('//div[@class="Product-prices"]/span/text()').extract()
         tipos = response.selector.xpath('//div[@class="Product-brand"]/text()').extract()
         imagenes = response.selector.xpath('//a[@class="Product-image"]//img/@src').extract()
-        sitio = [0, 0, "Disco"]
+        sitio = response.selector.xpath('//li[@class="titulo-lista"]/text()').extract()
 
         n = 0
         cant = len(nombres)
@@ -351,7 +351,7 @@ class disco2(scrapy.Spider):
         precios = response.selector.xpath('//div[@class="Product-prices"]/span/text()').extract()
         tipos = response.selector.xpath('//div[@class="Product-brand"]/text()').extract()
         imagenes = response.selector.xpath('//a[@class="Product-image"]//img/@src').extract()
-        sitio = [0, 0, "Disco"]
+        sitio = response.selector.xpath('//li[@class="titulo-lista"]/text()').extract()
 
         n = 0
         cant = len(nombres)
@@ -388,7 +388,7 @@ class disco2(scrapy.Spider):
         precios = response.selector.xpath('//div[@class="Product-prices"]/span/text()').extract()
         tipos = response.selector.xpath('//div[@class="Product-brand"]/text()').extract()
         imagenes = response.selector.xpath('//a[@class="Product-image"]//img/@src').extract()
-        sitio = [0, 0, "Disco"]
+        sitio = response.selector.xpath('//li[@class="titulo-lista"]/text()').extract()
 
         n = 0
         cant = len(nombres)
@@ -425,7 +425,7 @@ class disco2(scrapy.Spider):
         precios = response.selector.xpath('//div[@class="Product-prices"]/span/text()').extract()
         tipos = response.selector.xpath('//div[@class="Product-brand"]/text()').extract()
         imagenes = response.selector.xpath('//a[@class="Product-image"]//img/@src').extract()
-        sitio = [0, 0, "Disco"]
+        sitio = response.selector.xpath('//li[@class="titulo-lista"]/text()').extract()
 
         n = 0
         cant = len(nombres)
@@ -461,7 +461,7 @@ class disco2(scrapy.Spider):
         precios = response.selector.xpath('//div[@class="Product-prices"]/span/text()').extract()
         tipos = response.selector.xpath('//div[@class="Product-brand"]/text()').extract()
         imagenes = response.selector.xpath('//a[@class="Product-image"]//img/@src').extract()
-        sitio = [0, 0, "Disco"]
+        sitio = response.selector.xpath('//li[@class="titulo-lista"]/text()').extract()
 
         n = 0
         cant = len(nombres)
